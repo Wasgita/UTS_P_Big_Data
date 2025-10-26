@@ -113,8 +113,8 @@ st.markdown('<p class="subtitle">Deteksi objek (YOLO) & klasifikasi gambar (CNN)
 # ==========================
 @st.cache_resource
 def load_models():
-    yolo_model = YOLO("model/Wasgita Rahma.S_Laporan 4.pt")
-    classifier = tf.keras.models.load_model("model/Gita_Laporan 2.h5")
+    yolo_model = YOLO("Model/Wasgita Rahma.S_Laporan 4.pt")
+    classifier = tf.keras.models.load_model("Model/Gita_Laporan 2.h5")
     return yolo_model, classifier
 
 yolo_model, classifier = load_models()
